@@ -1,0 +1,46 @@
+.table1{
+    width: 800px; 
+    border: solid 2px black;
+     margin: auto;
+     background-color: aliceblue;
+}
+#td1{
+    width: 100%;
+    text-align: center;
+    color:blueviolet;
+    font-family: 'Holtwood One SC', serif;
+    font-size: x-large;
+     
+}
+#textboxhistory{
+    width: 99%;
+    text-align: right;
+    font-size: xx-large;
+}
+#textbox{
+    width: 99%;
+    text-align: right;
+    font-size: xx-large;
+
+}
+.table2{
+    width: 100%;
+    /* border: solid 1px black; */
+}
+.table2 td{
+    width: 25%;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+   font-size: larger;
+
+}
+button:hover{
+    color: red;
+    
+}
+.table2 > td:hover{
+    color: red;
+}

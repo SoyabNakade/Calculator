@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script src="index.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Holtwood+One+SC&family=Oleo+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+        <style>
+            .td3 button{
+                color: white;
+            }
+        </style>
+         <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <table class="table1">
+        <tr>
+            <td id="td1">
+                <h1>Standard Calculator</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="textboxhistory" readonly="true">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="textbox" readonly="true">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="table2">
+                    <tr>
+                        <td class="td2" colspan="3">
+                            <button onclick=" clearall()" style="background-color:lightgrey;"><b>CE</b></button>
+                        </td>
+                        <td class="td2">
+                            <button onclick="clearone()" style="background-color:lightgrey;"><b>BACKSPACE</b> </button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="td3">
+                            <button onclick="typenumber(this)"
+                                style="background-color: black;"><b>9</b></button>
+                        </td>
+                        <td class="td3">
+                            <button onclick="typenumber(this)"
+                                style="background-color:black;"><b>8</b></button>
+                        </td>
+                        <td class="td3">
+                            <button onclick="typenumber(this)"
+                                style="background-color: black;"><b>7</b></button>
+                        </td>
+                        <td>
+                            <button onclick="operation(this)" style="background-color:orange; "><b>+</b></button>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="td3">
+                            <button onclick="typenumber(this)"
+                                style="background-color: black;"><b>6</b></button>
+                        </td>
+                        <td class="td3">
+                            <button onclick="typenumber(this)"
+                                style="background-color: black;"><b>5</b></button>
+                        </td>
+                        <td class="td3">
+                            <button onclick="typenumber(this)"
+                                style="background-color: black;"><b>4</b></button>
+
+                        </td>
+                        <td>
+                            <button onclick="operation(this)" style="background-color:orange; "><b>-</b></button>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="td3">
+                            <button onclick="typenumber(this)"
+                            
+                                style="background-color: black;"><b>3</b></button>
+                        </td>
+                        <td class="td3">
+                            <button onclick="typenumber(this)" style="background-color: black;">
+                                <b>2</b></button>
+                        </td>
+                        <td class="td3">
+                            <button onclick="typenumber(this)"
+                                style="background-color: black;"><b>1</b></button>
+                        </td>
+                        <td>
+                            <button onclick="operation(this)" style="background-color:orange; "><b>X</b></button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="td3">
+                            <button onclick="typenumber(this)"
+                                style="background-color: black;"><b>.</b></button>
+                        </td>
+                        <td class="td3">
+                            <button onclick="typenumber(this)"
+                                style="background-color: black;"><b>0</b></button>
+
+                        </td>
+                        <td>
+                            <button onclick="calcu()" style="background-color: orange"><b>=</b></button>
+                        </td>
+                        <td>
+                            <button onclick="operation(this)" style="background-color:orange; "><b>/</b></button>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- <script>
+    function typenumber(ctrl){
+    let textbox=document.getElementById("textbox");
+    let value=textbox.value;
+    textbox.value= value + ctrl.innerText; 
+}
+    </script> -->
+</body>
+
+</html>
